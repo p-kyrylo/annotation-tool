@@ -5,7 +5,10 @@ This tool allows you to annotate objects in a video based on a specified prompt.
 
 ## Usage
 
-```bash
+### To start
+
+`pip install -r requirements.txt`
+
 python annotation_tool.py <input_path> <prompt> <save_path> [--nframe N] [--only_txt True]
 
 1. **`input_path`** (type: `str`):  
@@ -22,3 +25,11 @@ python annotation_tool.py <input_path> <prompt> <save_path> [--nframe N] [--only
    
 2. **`--only_txt`** (type: `bool`):  
    Set to `True` if only `.txt` files are needed.
+
+## Example 
+
+`python annotate_video.py "video_files/bottles.mp4" "steel wet cans" "annotations/output" --nframe 2 `
+
+## Result
+
+![Image not found](output/frame_0.jpeg)
